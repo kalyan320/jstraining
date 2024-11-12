@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If.. Else... If..else Statement</title>
+
+    <script>
+        var m = parseInt(prompt("Enter Maths Marks"));
+        var p = parseInt(prompt("Enter Physics Marks"));
+        var c = parseInt(prompt("Enter Chemistry Marks"));
+
+        document.write("Maths - " + m + "<br>");
+        document.write("Physics - " + p + "<br>");
+        document.write("Chemistry - " + c + "<br>");
+
+        var t = m + p + c;
+        document.write("Total - " + t + "<br>");
+        var a = t / 3;
+        document.write("Average - " + a + "<br>");
+        if (m >= 35 && p >= 35 && c >= 35) {
+            document.write("Status - Passed<br>");
+
+            if (a >= 35 && a < 60) {
+                document.write("Grade - C");
+            }
+            else if (a >= 60 && a < 80) {
+                document.write("Grade - B");
+
+            }
+            else {
+                document.write("Grade - A");
+            }
+        }
+        else {
+            document.write("Status - Failed");
+        }
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
