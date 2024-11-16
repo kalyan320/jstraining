@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Variables</title>
+    <script>
+        var b = 20;
+        document.write("Global :" + b + "<br>");
+        
+        function test1(){
+            var a = 10;
+            document.write("Local :" + a + "<br>");
+            document.write("Global :" + b + "<br>");
+        }
+        test1();
+        function test2(){
+            document.write("Global :" + b + "<br>");
+        }
+        test2();
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

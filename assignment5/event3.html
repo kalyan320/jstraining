@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events </title>
+    <script>
+        function ss1(a){
+            a.style.color="red";
+            a.style.backgroundColor="yellow";
+            a.innerHTML = "Mouse OVer";
+        }
+        function ss2(b){
+            b.style.color="yellow";
+            b.style.backgroundColor="red";
+            b.innerHTML = "Mouse Out";
+        }
+        </script>
+</head>
+<body>
+    
+    <p onmousedown="ss1(this)" onmouseup="ss2(this)">Scrolling Text</p>
+    <p onmousedown="ss1(this)" onmouseup="ss2(this)">Scrolling Text</p>
+</body>
+</html>

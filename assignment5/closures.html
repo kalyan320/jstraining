@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closures</title>
+    <script>
+        function hello(){
+            var x = "hello";
+            function world(){
+                var y ="world";
+                document.write(x+y);
+            }
+            return world();
+        }
+        hello();
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
