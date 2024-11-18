@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Handling</title>
+    <script>
+        function ss() {
+            try {
+                var x = document.getElementById("n").value;
+                if (x == "") throw "Empty";
+                if (isNaN(x)) throw "Not A Number";
+                if (x < 3) throw "Too Low";
+                if (x > 6) throw "Too High";
+                if (x >= 3 && x <= 6) throw "Correct";
+            }
+            catch (e) {
+                document.getElementById("err").innerHTML = e;
+            }
+            finally {
+                document.getElementById("n").value = "";
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <p>3-6</p>
+    <input type="text" id="n"> <b id="err"></b><br>
+    <input type="button" value="Test button" onclick="ss()">
+
+</body>
+
+</html>
