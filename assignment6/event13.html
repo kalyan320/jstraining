@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events : onclick</title>
+    <script>
+        function ss(a){
+            var x = parseInt(document.myform.n1.value);
+            var y = parseInt(document.myform.n2.value);
+            if(a == "Add"){
+                document.myform.r.value = x+y;
+            }
+            else if(a == "Sub"){
+                document.myform.r.value = x-y;
+
+            }
+            else if(a == "Mul"){
+                document.myform.r.value = x*y;
+
+            }
+            else if(a == "Div"){
+                document.myform.r.value = x/y;
+
+            }
+        }
+        // function ss2(b){
+        //     b.style.color="yellow";
+        //     b.style.backgroundColor="red";
+        //     b.innerHTML = "Mouse Out";
+        // }
+        </script>
+</head>
+<body>
+
+    <form name="myform">
+        Number 1 <input type="text" name="n1"><br>
+        Number 2 <input type="text" name="n2"><br>
+        Result <input type="text" name="r"><br>
+        <input type="button" value="Add" onclick="ss(this.value)">
+        <input type="button" value="Sub" onclick="ss(this.value)">
+        <input type="button" value="Mul" onclick="ss(this.value)">
+        <input type="button" value="Div" onclick="ss(this.value)">
+    </form>
+</body>
+</html>
