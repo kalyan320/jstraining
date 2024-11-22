@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Date Object</title>
+    <script>
+      var a = new Date();
+      document.write(a + "<br>");
+
+      var b = a.getHours();
+      var c = a.getMinutes();
+      var d = a.getSeconds();
+      var e = a.getMilliseconds();
+
+      document.write(b+":"+c+":"+d+":"+e+"<br>"); 
+
+      if(b<12){
+        document.write("Good Morning");
+      }
+      else if(b>=12&&b<17){
+        document.write("Good Afternoon");
+        
+      }
+      else{
+        document.write("Good Evening");
+
+      }
+
+      
+    </script>
+  </head>
+
+  <body></body>
+</html>

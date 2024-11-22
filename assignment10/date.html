@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Date Object</title>
+    <script>
+      var a = new Date();
+      document.write(a + "<br>");
+
+      var b = a.getDay();
+      document.write(b + "<br>");
+
+      var c = [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+      ];
+      document.write("Today is " + c[b] + "<br>");
+
+      var d = a.getMonth();
+      document.write(d + "<br>");
+
+      var e = [
+        "Jan",
+        "Feb",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "Aug",
+        "Spet",
+        "Oct",
+        "Nov",
+        "Dec",
+      ];
+      document.write("This is the month of " + e[d] + "<br>");
+
+      var f = a.getFullYear();
+      document.write(f + "<br>");
+
+      var g = a.getDate();
+      document.write(g + "<br>");
+
+      var h;
+      switch (g) {
+        case 1:
+        case 21:
+        case 31:
+          h = "st";
+          break;
+        case 2:
+        case 22:
+          h = "nd";
+          break;
+        case 3:
+        case 23:
+          h = "rd";
+          break;
+        default:
+          h = "th";
+      }
+      document.write(
+        "This is the " + g + "<sup>" + h + "</sup> of the " + e[d] + " Month"
+      );
+    </script>
+  </head>
+
+  <body></body>
+</html>

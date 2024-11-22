@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Live Date and Time Object</title>
+    <script>
+      function ss(){
+        setInterval(livedatetime, 1000);
+      }
+      function livedatetime(){
+        var b = new Date();
+        document.getElementById("a").innerHTML=b.toLocaleTimeString();
+      }
+      
+    </script>
+  </head>
+
+  <body onload="ss()">
+    <p id="a"></p>
+  </body>
+</html>
