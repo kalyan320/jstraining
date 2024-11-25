@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DOM</title>
+  <script>
+    function ss(){
+      var d=document.createElement("p");
+      var e=document.createTextNode("this is new");
+      d.appendChild(e);
+      var f=document.getElementById("a");
+      f.appendChild(d);
+
+    }
+    
+
+  </script>
+ 
+</head>
+
+<body onload="ss()">
+  <div id="a">
+    <p id="b">Paragraph 1</p>
+    <p id="c">Paragraph 2</p>
+  </div>
+</body>
+
+</html>

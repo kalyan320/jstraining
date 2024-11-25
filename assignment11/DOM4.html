@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DOM</title>
+  <script>
+    function ss(){
+        document.getElementById("btn").addEventListener("click",sample);
+        function sample(){
+          alert("Event Listener");
+        }
+    }
+    
+
+  </script>
+ 
+</head>
+
+<body onload="ss()">
+  <input type="button" value="click" id="btn">
+</body>
+
+</html>
