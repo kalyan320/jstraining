@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form Validation</title>
+  <script>
+    function ss(){
+      var a = document.myform.gender.length;
+      var b;
+      for(c=0;c<a;c++){
+        if(document.myform.gender[c].checked){
+          b="checked";
+          break;
+        }
+      }
+
+
+      
+      if(b=="checked"){
+        alert("Successfully checked");
+      }
+      else{
+        alert("Please check atleast one option");
+        return false;
+      }
+    }
+    
+
+  </script>
+</head>
+
+<body>
+  <form action="user.php" onsubmit="return ss()" name="myform">
+   <input type="radio" name="gender" value="male"> Male
+   <input type="radio" name="gender" value="female"> Female <br>
+    <input type="submit">
+  </form>
+</body>
+
+</html>

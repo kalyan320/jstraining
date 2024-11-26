@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form Validation</title>
+  <script>
+    function ss(){
+      var x;
+      if(document.getElementById("car").checked){
+        x = "checked";
+      }
+      if(document.getElementById("bike").checked){
+        x = "checked";
+      }
+      
+      if(x=="checked"){
+        alert("Successfully checked");
+      }
+      else{
+        alert("Please check atleast one option");
+        return false;
+      }
+    }
+    
+
+  </script>
+</head>
+
+<body>
+  <form action="user.php" onsubmit="return ss()" name="myform">
+   <input type="checkbox" name="vehicle" value="car" id="car"> Car
+   <input type="checkbox" name="vehicle" value="bike" id="bike"> Bike
+    <input type="submit">
+  </form>
+</body>
+
+</html>

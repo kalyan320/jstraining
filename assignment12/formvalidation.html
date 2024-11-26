@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form Validation</title>
+  <script>
+    function ss(){
+      var x = document.myform.course.value;
+      if(x==""){
+        alert("Select any option");
+        document.myform.course.focus();
+        return false;
+      }
+      else{
+        alert("Successfully Submitted");
+      }
+    }
+    
+
+  </script>
+</head>
+
+<body>
+  <form action="user.php" onsubmit="return ss()" name="myform">
+    <select name="course">
+      <option value="">-- Select Any Option --</option>
+      <option value="html">Html</option>
+      <option value="css">Css</option>
+      <option value="js">Js</option>
+    </select>
+    <input type="submit">
+  </form>
+</body>
+
+</html>
