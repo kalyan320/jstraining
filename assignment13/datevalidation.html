@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form Validation</title>
+  <script>
+    function ss(){
+      var x = document.myform.user.value;
+      var y =/^\d{4}\-\d{1,2}\-\d{1,2}$/;
+      var z = y.test(x);
+      if(z==true){
+        alert("Success");
+      }
+      else{
+        alert("dd/mm/yyyy required");
+        document.myform.user.focus();
+        return false;
+      }
+    }
+    
+
+  </script>
+</head>
+
+<body>
+  <form action="user.php" onsubmit="return ss()" name="myform">
+   <input type="date" name="user"><br>
+    <input type="submit">
+  </form>
+</body>
+
+</html>
